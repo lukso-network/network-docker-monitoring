@@ -19,6 +19,7 @@ NOTE: this setup only works with prysm.
 4. Wait for all services to start.
 5. Go to: <http://localhost:3000/>
    User: `admin`, password: `admin`
+6. You can find the dashboard from the [dashboard menu](http://localhost:3000/dashboards) in the General folder.
 
 You can check on the [Prometheus dashboard](http://localhost:9090/) if the [targets](http://localhost:9090/targets?search=) are green.
 
