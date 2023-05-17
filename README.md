@@ -20,6 +20,11 @@ Tested on macOS Intel.
 2. Follow the CLI instructions and start the LUKSO CLI.
 
 NOTE: this setup has only been tested with prysm.
+NOTE: if you use erigon client, you need to enable metrics with: `--erigon-metrics` flag:
+
+```bash
+lukso start --validator --transaction-fee-recipient "0x123..." --erigon-metrics
+```
 
 3. Run: `docker compose up` (you can use `-d` to run it in the background).
 4. Wait for all services to start.
@@ -34,6 +39,7 @@ You can check on the [Prometheus dashboard](http://localhost:9090/) if the [targ
 ## Inspired by
 
 - <https://github.com/metanull-operator/eth2-grafana>
+- <https://github.com/ledgerwatch/erigon/tree/devel/cmd/prometheus>
 
 ## References
 
