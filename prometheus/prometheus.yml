@@ -60,3 +60,10 @@ scrape_configs:
           - host.docker.internal:6060
           - host.docker.internal:6061
           - host.docker.internal:6062
+
+  - job_name: "geth"
+    metrics_path: /debug/metrics/prometheus
+    scheme: http
+    static_configs:
+      - targets:
+          - "host.docker.internal:6060"

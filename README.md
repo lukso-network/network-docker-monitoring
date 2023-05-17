@@ -23,7 +23,11 @@ NOTE: this setup has only been tested with prysm.
 NOTE: if you use erigon client, you need to enable metrics with: `--erigon-metrics` flag:
 
 ```bash
+# Erigon
 lukso start --validator --transaction-fee-recipient "0x123..." --erigon-metrics
+
+# Geth
+lukso start --validator --transaction-fee-recipient "0x123..." --geth-metrics --geth-pprof --geth-pprof.addr=0.0.0.0
 ```
 
 3. Run: `docker compose up` (you can use `-d` to run it in the background).
@@ -40,6 +44,7 @@ You can check on the [Prometheus dashboard](http://localhost:9090/) if the [targ
 
 - <https://github.com/metanull-operator/eth2-grafana>
 - <https://github.com/ledgerwatch/erigon/tree/devel/cmd/prometheus>
+- <https://grafana.com/grafana/dashboards/14053-geth-overview/>
 
 ## References
 
