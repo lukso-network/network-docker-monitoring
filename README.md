@@ -27,7 +27,7 @@ NOTE: if you use erigon client, you need to enable metrics with: `--erigon-metri
 lukso start --validator --transaction-fee-recipient "0x123..." --erigon-metrics
 
 # Geth
-lukso start --validator --transaction-fee-recipient "0x123..." --geth-metrics --geth-pprof --geth-pprof.addr=0.0.0.0
+lukso start --validator --transaction-fee-recipient "0x123..." --geth-metrics
 ```
 
 3. Run: `docker compose up` (you can use `-d` to run it in the background).
